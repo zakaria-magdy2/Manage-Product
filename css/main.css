@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #222;
+  color: #fff;
+  font-family: system-ui;
+}
+
+/* Start head  */
+.crud {
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+.crud .head {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px 0;
+  font-size: 25px;
+}
+/* End head  */
+
+/* Start Input  */
+.crud input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 5px;
+  margin: 4px 0;
+  background-color: #111;
+  transition: 0.3s;
+  color: white;
+  border-radius: 4px;
+}
+.crud input:focus {
+  background-color: black;
+  transform: scale(1.1);
+}
+.crud .price input {
+  width: 20%;
+}
+#total {
+  background-color: red;
+  padding: 5px 2px;
+  border-radius: 4px;
+}
+#total::before {
+  content: "Total : ";
+}
+.crud button {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background-color: #310044;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.crud button:hover {
+  background-color: #3a0351;
+  letter-spacing: 1px;
+}
+/* End Input  */
+
+.output .searchBy {
+  display: flex;
+  justify-content: space-between;
+  gap: 15%;
+}
+
+.crud table {
+  text-align: center;
+  width: 100%;
+  margin: 10px 0;
+}
+.crud table th {
+  text-transform: uppercase;
+}
+th,
+td {
+  padding: 5px;
+}
+#deleteAll {
+  margin: 20px 0;
+  display: none;
+}
